@@ -1,10 +1,10 @@
-# SubSense Dashboard Guide
+# Bhurakshak Dashboard Guide
 
-This document explains the full SubSense operator dashboard: what each feature does, what each graph or visual indicator means, and how an operator should check the system during a monitoring session.
+This document explains the full Bhurakshak operator dashboard: what each feature does, what each graph or visual indicator means, and how an operator should check the system during a monitoring session.
 
 ## 1. Dashboard Purpose
 
-SubSense is a ground stability intelligence dashboard for monitoring mine subsidence risk. It shows simulated data from sensor nodes placed across mine zones. The dashboard helps an operator:
+Bhurakshak is a ground stability intelligence dashboard for monitoring mine subsidence risk. It shows simulated data from sensor nodes placed across mine zones. The dashboard helps an operator:
 
 - Check mine-wide risk.
 - Locate risky sensor nodes on the live mine map.
@@ -34,7 +34,7 @@ The dashboard is divided into these major areas:
 
 ### Product Identity
 
-The top-left area displays `SUBSENSE` and the subtitle `GROUND STABILITY INTELLIGENCE`. This identifies the dashboard as a mine ground-stability monitoring console.
+The top-left area displays `BHURAKSHAK` and the subtitle `GROUND STABILITY INTELLIGENCE`. This identifies the dashboard as a mine ground-stability monitoring console.
 
 ### System Status
 

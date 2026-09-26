@@ -9,8 +9,8 @@ export default defineConfig({
       registerType: 'autoUpdate',
       includeAssets: ['favicon.svg', 'favicon-16.png', 'favicon-32.png', 'apple-touch-icon.png'],
       manifest: {
-        name: 'SubSense — Ground Stability Intelligence',
-        short_name: 'SubSense',
+        name: 'Bhurakshak — Ground Stability Intelligence',
+        short_name: 'Bhurakshak',
         description: 'Mine ground stability monitoring console — sensor risk, alerts, and mesh health for operators.',
         start_url: '/',
         display: 'standalone',
