@@ -90,7 +90,7 @@ This badge shows the selected mine's overall assessment:
 
 The large number shows nodes that are currently online. Offline nodes are excluded from this count.
 
-Example: if a mine has 9 total nodes and 1 is offline, the active node count is `08`.
+Example: if a mine has 4 total nodes and 1 is offline, the active node count is `03`.
 
 ### Risk Rows
 

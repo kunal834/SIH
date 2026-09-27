@@ -24,33 +24,28 @@ function makeNode(config) {
 }
 
 const abcNodes = [
-  makeNode({ id: 'N-014', zone: 'A-08', x: 14, y: 26, riskScore: 18, tiltDeg: 0.021, displacementMm: 1.1, crackMm: 0.4, temperatureC: 28.4, baselineRisk: 14, confidence: 96, rssiDbm: -68, snrDb: 11.8, batteryPct: 94, lastSeenSec: 3, trend: [12, 13, 13, 14, 14, 16, 17, 18] }),
-  makeNode({ id: 'N-015', zone: 'A-11', x: 31, y: 18, riskScore: 24, tiltDeg: 0.028, displacementMm: 1.4, crackMm: 0.6, temperatureC: 29.1, baselineRisk: 18, confidence: 94, rssiDbm: -71, snrDb: 10.2, batteryPct: 87, lastSeenSec: 4, trend: [18, 18, 19, 20, 20, 22, 23, 24] }),
-  makeNode({ id: 'N-016', zone: 'B-02', x: 48, y: 26, status: 'watch', riskScore: 47, tiltDeg: 0.051, displacementMm: 2.8, crackMm: 1.3, temperatureC: 29.7, samplingRate: '90 sec', baselineRisk: 27, confidence: 91, rssiDbm: -79, snrDb: 9.4, batteryPct: 82, lastSeenSec: 5, trend: [30, 33, 32, 36, 38, 39, 43, 47] }),
-  makeNode({ id: 'N-019', zone: 'B-04', x: 72, y: 24, riskScore: 29, tiltDeg: 0.032, displacementMm: 1.7, crackMm: 0.8, temperatureC: 28.9, baselineRisk: 21, confidence: 95, rssiDbm: -74, snrDb: 10.8, batteryPct: 90, lastSeenSec: 4, trend: [20, 21, 21, 23, 24, 26, 28, 29] }),
-  makeNode({ id: 'N-020', zone: 'B-09', x: 88, y: 33, riskScore: 16, tiltDeg: 0.019, displacementMm: 0.8, crackMm: 0.3, temperatureC: 27.8, baselineRisk: 12, confidence: 97, rssiDbm: -64, snrDb: 12.6, batteryPct: 97, lastSeenSec: 2, trend: [12, 12, 13, 13, 14, 14, 15, 16] }),
-  makeNode({ id: 'N-017', zone: 'C-12', x: 57, y: 49, status: 'elevated', riskScore: 82, tiltDeg: 0.084, displacementMm: 4.2, crackMm: 2.8, temperatureC: 31.8, samplingRate: '30 sec', baselineRisk: 24, confidence: 88, rssiDbm: -87, snrDb: 8.4, batteryPct: 78, lastSeenSec: 6, trend: [12, 18, 25, 31, 44, 55, 67, 82] }),
-  makeNode({ id: 'N-018', zone: 'C-14', x: 69, y: 63, status: 'critical', riskScore: 92, tiltDeg: 0.112, displacementMm: 5.7, crackMm: 3.6, vibration: 'elevated', temperatureC: 32.1, samplingRate: '30 sec', baselineRisk: 31, confidence: 84, rssiDbm: -91, snrDb: 7.1, batteryPct: 64, lastSeenSec: 8, trend: [24, 29, 34, 42, 51, 63, 78, 92] }),
-  makeNode({ id: 'N-021', zone: 'C-18', x: 83, y: 71, riskScore: 21, tiltDeg: 0.025, displacementMm: 1.3, crackMm: 0.5, temperatureC: 29.4, baselineRisk: 17, confidence: 93, rssiDbm: -76, snrDb: 9.7, batteryPct: 85, lastSeenSec: 5, trend: [15, 16, 16, 17, 18, 18, 20, 21] }),
-  makeNode({ id: 'N-022', zone: 'D-03', x: 28, y: 78, status: 'offline', riskScore: 0, tiltDeg: 0, displacementMm: 0, crackMm: 0, vibration: 'no signal', temperatureC: 0, samplingRate: 'buffered', baselineRisk: 20, confidence: 0, rssiDbm: 0, snrDb: 0, batteryPct: 22, lastSeenSec: 486, trend: [20, 20, 20, 20, 20, 20, 20, 20] }),
+  makeNode({ id: 'N-014', zone: 'A-08', x: 18, y: 28, riskScore: 18, tiltDeg: 0.021, displacementMm: 1.1, crackMm: 0.4, temperatureC: 28.4, baselineRisk: 14, confidence: 96, rssiDbm: -68, snrDb: 11.8, batteryPct: 94, lastSeenSec: 3, trend: [12, 13, 13, 14, 14, 16, 17, 18] }),
+  makeNode({ id: 'N-016', zone: 'B-02', x: 72, y: 24, status: 'watch', riskScore: 47, tiltDeg: 0.051, displacementMm: 2.8, crackMm: 1.3, temperatureC: 29.7, samplingRate: '90 sec', baselineRisk: 27, confidence: 91, rssiDbm: -79, snrDb: 9.4, batteryPct: 82, lastSeenSec: 5, trend: [30, 33, 32, 36, 38, 39, 43, 47] }),
+  makeNode({ id: 'N-017', zone: 'C-12', x: 34, y: 66, status: 'elevated', riskScore: 82, tiltDeg: 0.084, displacementMm: 4.2, crackMm: 2.8, temperatureC: 31.8, samplingRate: '30 sec', baselineRisk: 24, confidence: 88, rssiDbm: -87, snrDb: 8.4, batteryPct: 78, lastSeenSec: 6, trend: [12, 18, 25, 31, 44, 55, 67, 82] }),
+  makeNode({ id: 'N-018', zone: 'C-14', x: 66, y: 72, status: 'critical', riskScore: 92, tiltDeg: 0.112, displacementMm: 5.7, crackMm: 3.6, vibration: 'elevated', temperatureC: 32.1, samplingRate: '30 sec', baselineRisk: 31, confidence: 84, rssiDbm: -91, snrDb: 7.1, batteryPct: 64, lastSeenSec: 8, trend: [24, 29, 34, 42, 51, 63, 78, 92] }),
 ]
 
-const jhariaNodes = Array.from({ length: 12 }, (_, index) => makeNode({
-  id: `J-${String(201 + index).padStart(3, '0')}`, zone: `E-${String(4 + index).padStart(2, '0')}`, x: 10 + (index % 4) * 25, y: 18 + Math.floor(index / 4) * 27,
+const jhariaNodes = Array.from({ length: 4 }, (_, index) => makeNode({
+  id: `J-${String(201 + index).padStart(3, '0')}`, zone: `E-${String(4 + index).padStart(2, '0')}`, x: 25 + (index % 2) * 50, y: 28 + Math.floor(index / 2) * 42,
   riskScore: 10 + (index % 5) * 3, tiltDeg: 0.014 + (index % 4) * 0.003, displacementMm: 0.6 + (index % 4) * 0.2, crackMm: 0.2 + (index % 3) * 0.1,
   temperatureC: 27.2 + (index % 5) * 0.5, baselineRisk: 9 + (index % 4) * 2, confidence: 96 - (index % 3), rssiDbm: -61 - (index % 5) * 3,
   snrDb: 12.8 - (index % 4) * 0.6, batteryPct: 91 - (index % 4) * 4, trend: [10, 10, 11, 11, 12, 12, 13, 13 + (index % 3)],
 }))
 
-const raniganjNodes = Array.from({ length: 12 }, (_, index) => makeNode({
-  id: `R-${String(301 + index).padStart(3, '0')}`, zone: `S-${String(2 + index).padStart(2, '0')}`, x: 12 + (index % 4) * 24, y: 20 + Math.floor(index / 4) * 26,
-  status: index === 2 ? 'watch' : index === 6 ? 'elevated' : index > 9 ? 'offline' : 'healthy', riskScore: index === 2 ? 51 : index === 6 ? 62 : 18 + (index % 5) * 3,
-  tiltDeg: index === 2 ? 0.058 : index === 6 ? 0.067 : 0.018 + (index % 4) * 0.004, displacementMm: index === 2 ? 2.9 : index === 6 ? 3.4 : 0.8 + (index % 4) * 0.2,
-  crackMm: index === 2 ? 1.4 : index === 6 ? 1.9 : 0.3 + (index % 3) * 0.2, temperatureC: index === 6 ? 30.6 : 28.1 + (index % 5) * 0.6,
-  samplingRate: index === 2 || index === 6 ? '90 sec' : '5 min', baselineRisk: index === 2 ? 28 : index === 6 ? 33 : 15 + (index % 4) * 2, confidence: index > 9 ? 0 : 90 + (index % 6),
-  rssiDbm: index === 6 ? -84 : index > 9 ? 0 : -67 - (index % 5) * 4, snrDb: index === 6 ? 8.7 : index > 9 ? 0 : 11.7 - (index % 4) * 0.7,
-  batteryPct: index > 9 ? 18 + index : 84 - (index % 5) * 5, lastSeenSec: index > 9 ? 340 + index * 23 : 3 + (index % 5), vibration: index === 6 ? 'elevated' : index > 9 ? 'no signal' : 'normal',
-  trend: index === 6 ? [28, 31, 34, 37, 42, 47, 55, 62] : index === 2 ? [24, 28, 31, 34, 38, 42, 47, 51] : [16, 17, 17, 18, 19, 19, 20, 21],
+const raniganjNodes = Array.from({ length: 4 }, (_, index) => makeNode({
+  id: `R-${String(301 + index).padStart(3, '0')}`, zone: `S-${String(2 + index).padStart(2, '0')}`, x: 25 + (index % 2) * 50, y: 28 + Math.floor(index / 2) * 42,
+  status: index === 2 ? 'watch' : index === 3 ? 'elevated' : index === 1 ? 'offline' : 'healthy', riskScore: index === 2 ? 51 : index === 3 ? 62 : 18 + (index % 5) * 3,
+  tiltDeg: index === 2 ? 0.058 : index === 3 ? 0.067 : 0.018 + (index % 4) * 0.004, displacementMm: index === 2 ? 2.9 : index === 3 ? 3.4 : 0.8 + (index % 4) * 0.2,
+  crackMm: index === 2 ? 1.4 : index === 3 ? 1.9 : 0.3 + (index % 3) * 0.2, temperatureC: index === 3 ? 30.6 : 28.1 + (index % 5) * 0.6,
+  samplingRate: index === 2 || index === 3 ? '90 sec' : '5 min', baselineRisk: index === 2 ? 28 : index === 3 ? 33 : 15 + (index % 4) * 2, confidence: index === 1 ? 0 : 90 + (index % 6),
+  rssiDbm: index === 3 ? -84 : index === 1 ? 0 : -67 - (index % 5) * 4, snrDb: index === 3 ? 8.7 : index === 1 ? 0 : 11.7 - (index % 4) * 0.7,
+  batteryPct: index === 1 ? 18 + index : 84 - (index % 5) * 5, lastSeenSec: index === 1 ? 340 + index * 23 : 3 + (index % 5), vibration: index === 3 ? 'elevated' : index === 1 ? 'no signal' : 'normal',
+  trend: index === 3 ? [28, 31, 34, 37, 42, 47, 55, 62] : index === 2 ? [24, 28, 31, 34, 38, 42, 47, 51] : [16, 17, 17, 18, 19, 19, 20, 21],
 }))
 
 const mineCatalog = [
@@ -64,32 +59,31 @@ const mineCatalog = [
     alerts: [
       { id: 'abc-crack-progression', tone: 'critical', label: 'CRITICAL', time: '2 MIN AGO', title: 'Crack progression detected', location: 'Zone C-12', risk: 92, nodeIds: ['N-017', 'N-018'], detail: 'Corroborated by N-017 and N-018. Adaptive sampling is active.' },
       { id: 'abc-elevated-tilt', tone: 'watch', label: 'WATCH', time: '11 MIN AGO', title: 'Elevated tilt, monitoring', location: 'Zone B-04', risk: 47, nodeIds: ['N-016'], detail: 'Single-node signal. Continue monitoring before escalation.' },
-      { id: 'abc-node-offline', tone: 'info', label: 'INFO', time: '18 MIN AGO', title: 'Node N-022 stopped reporting', location: 'Local buffer engaged', nodeIds: ['N-022'], detail: 'Gateway is holding packets for sync when connectivity returns.' },
     ],
   },
   {
-    id: 'JHARIA-4', sector: 'East Sector', risk: 'LOW', nodes: jhariaNodes, defaultNode: 'J-204', demo: { primary: 'J-204', neighbor: 'J-205', zone: 'E-07' },
+    id: 'JHARIA-4', sector: 'East Sector', risk: 'LOW', nodes: jhariaNodes, defaultNode: 'J-204', demo: { primary: 'J-204', neighbor: 'J-203', zone: 'E-07' },
     mapZones: [{ label: 'E-04', className: 'zone-a' }, { label: 'E-08', className: 'zone-b' }, { label: 'E-12', className: 'zone-c' }],
     activity: [
-      { time: '19:45:09', text: 'Baseline refreshed — J-204', tone: 'green' }, { time: '19:42:18', text: 'Heartbeat received — J-207', tone: 'green' },
-      { time: '19:39:44', text: 'Calibration check passed — east grid', tone: 'green' }, { time: '19:37:21', text: 'Cloud sync completed — 12 nodes', tone: 'green' }, { time: '19:34:05', text: 'Sampling interval stable — 5m', tone: 'blue' },
+      { time: '19:45:09', text: 'Baseline refreshed — J-204', tone: 'green' }, { time: '19:42:18', text: 'Heartbeat received — J-202', tone: 'green' },
+      { time: '19:39:44', text: 'Calibration check passed — east grid', tone: 'green' }, { time: '19:37:21', text: 'Cloud sync completed — 4 nodes', tone: 'green' }, { time: '19:34:05', text: 'Sampling interval stable — 5m', tone: 'blue' },
     ],
     alerts: [
       { id: 'jharia-baseline', tone: 'info', label: 'INFO', time: '4 MIN AGO', title: 'Location baseline refreshed', location: 'East grid · J-204', risk: 13, nodeIds: ['J-204'], detail: 'Per-node baseline remains stable after the latest calibration pass.' },
-      { id: 'jharia-link-check', tone: 'info', label: 'INFO', time: '16 MIN AGO', title: 'Mesh link quality check passed', location: '12 nodes online', nodeIds: [], detail: 'All gateways and surface links are reporting within baseline.' },
+      { id: 'jharia-link-check', tone: 'info', label: 'INFO', time: '16 MIN AGO', title: 'Mesh link quality check passed', location: '4 nodes online', nodeIds: [], detail: 'All gateways and surface links are reporting within baseline.' },
     ],
   },
   {
-    id: 'RANIGANJ-2', sector: 'South Sector', risk: 'WATCH', nodes: raniganjNodes, defaultNode: 'R-303', demo: { primary: 'R-303', neighbor: 'R-307', zone: 'S-04' },
+    id: 'RANIGANJ-2', sector: 'South Sector', risk: 'WATCH', nodes: raniganjNodes, defaultNode: 'R-303', demo: { primary: 'R-303', neighbor: 'R-304', zone: 'S-04' },
     mapZones: [{ label: 'S-02', className: 'zone-a' }, { label: 'S-07', className: 'zone-b' }, { label: 'S-10', className: 'zone-c' }],
     activity: [
-      { time: '19:44:32', text: 'Deformation trend rising — R-307', tone: 'amber' }, { time: '19:42:14', text: 'Link quality degraded — R-307', tone: 'amber' },
-      { time: '19:39:58', text: 'Sampling rate increased — S-04', tone: 'amber' }, { time: '19:37:41', text: 'Heartbeat received — R-301', tone: 'green' }, { time: '19:34:26', text: 'Local buffer engaged — R-311', tone: 'blue' },
+      { time: '19:44:32', text: 'Deformation trend rising — R-304', tone: 'amber' }, { time: '19:42:14', text: 'Link quality degraded — R-304', tone: 'amber' },
+      { time: '19:39:58', text: 'Sampling rate increased — S-04', tone: 'amber' }, { time: '19:37:41', text: 'Heartbeat received — R-301', tone: 'green' }, { time: '19:34:26', text: 'Local buffer engaged — R-302', tone: 'blue' },
     ],
     alerts: [
       { id: 'raniganj-tilt-watch', tone: 'watch', label: 'WATCH', time: '6 MIN AGO', title: 'Tilt trend increasing', location: 'Zone S-04', risk: 51, nodeIds: ['R-303'], detail: 'Mildly increasing deformation trend; adaptive monitoring is active.' },
-      { id: 'raniganj-link-degraded', tone: 'info', label: 'INFO', time: '14 MIN AGO', title: 'Degraded communication link', location: 'Node R-307 · RSSI -84 dBm', risk: 62, nodeIds: ['R-307'], detail: 'Communication quality is degraded; this signal is not treated as subsidence evidence.' },
-      { id: 'raniganj-buffer', tone: 'info', label: 'INFO', time: '21 MIN AGO', title: 'Two nodes using local buffer', location: 'South grid', nodeIds: ['R-311'], detail: 'Buffered packets will sync when the gateway connection is restored.' },
+      { id: 'raniganj-link-degraded', tone: 'info', label: 'INFO', time: '14 MIN AGO', title: 'Degraded communication link', location: 'Node R-304 · RSSI -84 dBm', risk: 62, nodeIds: ['R-304'], detail: 'Communication quality is degraded; this signal is not treated as subsidence evidence.' },
+      { id: 'raniganj-buffer', tone: 'info', label: 'INFO', time: '21 MIN AGO', title: 'One node using local buffer', location: 'South grid', nodeIds: ['R-302'], detail: 'Buffered packets will sync when the gateway connection is restored.' },
     ],
   },
 ]
